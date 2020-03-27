@@ -1,0 +1,310 @@
+/*
+Theme Name: IllyaKing
+Theme URI: https://illyaking.com 
+Author: Illya King
+Author URI: https://illyaking.com
+Description: This is a beautiful theme with a flexible layout that looks great on any device, big or small.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: purple, yellow, black, white, light, one-column, two-columns, right-sidebar, responsive-layout, custom-header, custom-menu,
+editor-style, featured-images, microformats, post-formats, rtl-language-support, translation-ready
+Text Domain: illyaking
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*==Global Mods ==*/
+
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    margin: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.footerMenu {
+    text-align: center;
+}
+
+.pager li {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+.pagination,
+.pager {
+    margin-bottom: 20px;
+}
+
+.pagination a span,
+.pagination li a {
+    margin-right: 20px;
+}
+
+.pagination .current {
+    color: #000000 !important;
+    margin-right: 20px;
+    margin-top: -2px;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+.well {
+    background: #eee;
+    border-left: none;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-style: none;
+}
+
+.well .sidebar-module-border .business_address_widget {
+    border-left: none;
+    border-style: none;
+}
+
+
+/*==Navbar Mods ==*/
+
+button.btn.btn-outline-success.my-2.my-sm-0 {
+    color: #ffffff;
+    background-color: #4d148c;
+    border-color: #4d148c;
+    font-weight: 600;
+}
+
+button.btn.btn-outline-success.my-2.my-sm-0:hover {
+    background-color: #cfc20f;
+    color: #4d148c;
+}
+
+.navbar-dark .nav-link {
+    font-weight: 400;
+}
+
+.navbar-nav li a {
+    color: #eeeeee;
+}
+
+.navbar-nav li a:hover {
+    color: #cfc20f;
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    background-color: #000000;
+    border-radius: 0;
+}
+
+/*==Home Page ==*/
+
+.contactPage {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.contactForm {
+    background-color: #cfc20f;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.services {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.services h2 a {
+    color: #4d148c;
+}
+
+.services h2 a:hover {
+    color: #cfc20f;
+}
+
+.tetrad {
+    background: radial-gradient(transparent, transparent, #000000), url(img/purpleFloralPattern.jpg) no-repeat center;
+    background-color: #000000;
+    background-size: cover;
+}
+
+/*==== Jumbotron: LESS can't seem to modify Bootstrap ====*/
+
+.centerBoi {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.feature-text h1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    background-color:
+        rgba(74, 82, 95, 0.4);
+    color: #000;
+    font-size: 48px;
+    text-shadow: 3px 3px 0px black;
+    padding: 3%;
+    line-height: 65px;
+}
+
+.jumbotron {
+    background-color: #000000;
+    background-size: cover;
+    border-radius: 0;
+    min-height: 500px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    color: #ffffff;
+}
+
+.btn-lg.btn-primary {
+    color: #fff;
+    background-color: #4d148c;
+    border: 3px solid #2C0557;
+}
+
+.btn-lg.btn-primary:hover {
+    color: #4d148c;
+    background-color: #cfc20f;
+    border: 3px solid ##4d148c;
+}
+
+.icon-bar {
+    color: #ffffff;
+}
+
+/*==== ABOUT PAGE ====*/
+
+.aboutSpace {
+    margin-top: 20px;
+}
+
+a.list-group-item {
+    color: #4d148c;
+}
+
+/*==== BLOG PAGE ====*/
+.blog-main {
+    min-height: 550px;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+}
+
+.dividerBoi {
+    border-bottom: 2px solid #4d148c !important;
+}
+
+.blog-post-meta {
+    font-weight: 600;
+}
+
+h2,
+h3,
+.blog-post a,
+.blog-post-meta a,
+.sidebar-module a {
+    color: #4d148c;
+}
+
+.blog-post a:hover,
+.blog-post-meta a:hover,
+.sidebar-module a:hover {
+    color: #cfc20f;
+    text-decoration: none;
+}
+
+.blog-main,
+.blog-sidebar {
+    font-family: Arial, sans-serif;
+}
+
+.sidebar-module {
+    padding-left: 5px;
+}
+
+.sidebar-module-border {
+    border-left: 2px solid #4d148c !important;
+}
+
+.sidebar-module .fa-lg {
+    color: #4d148c;
+}
+
+.sidebar-module li {
+    margin-left: -40px;
+}
+
+/*==== CONTACT PAGE ====*/
+
+.maps {
+    text-align: right;
+}
+
+#contact input::input-placeholder,
+#contact textarea::input-placeholder {
+    color: #ccc;
+    font-family: Arial, sans-serif;
+}
+
+#contact input::-webkit-input-placeholder,
+#contact textarea::-webkit-input-placeholder {
+    color: #ccc;
+    font-family: Arial, sans-serif;
+}
+
+#contact input::-moz-placeholder,
+#contact textarea::-moz-placeholder {
+    color: #ccc;
+    font-family: Arial, sans-serif;
+}
+
+#contact input:-ms-input-placeholder,
+#contact textarea:-ms-input-placeholder {
+    color: #ccc;
+    font-family: Arial, sans-serif;
+}
+
+/*== Miscellaneous == */
+.footerBox h2 {
+    color: #ffffff;
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    font-size: 32px;
+}
+
+.fa {
+    margin-right: 10px;
+}
+
+.fa a:hover{
+    color: #cfc20f;
+}
+
+.list-inline {
+    display: inline-flex;
+}
+
+.rightBoi {
+    text-align: right;
+}

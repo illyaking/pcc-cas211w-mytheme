@@ -1,0 +1,253 @@
+/*
+File Name: style.less
+Date: 09/26/18
+Programmer: Illya King
+*/
+
+/*
+CHANGES DONE:
+- Revamp Website with Bootstrap Coding
+- Beautify Code
+*/
+
+/* MOBILE STYLESHEET */
+
+@import 'palette.less';
+@import 'mixins.less';
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+
+    a {
+        text-decoration: none;
+        color: @color1;
+
+        :hover {
+            color: @darkColor2;
+        }
+    }
+
+    p {
+        font-family: Arial, sans-serif;
+    }
+
+    label {
+        font-family: Arial, sans-serif;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#s {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: @darkColor;
+    background-color: @lightColor;
+    background-clip: padding-box;
+    border: 1px solid @color1;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#submit, #searchsubmit {
+    background-color: @color1;
+    color: @lightColor;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: @color2;
+        color: @color1;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: none;
+    }
+}
+
+header {
+    background: @darkColor;
+
+    h1 {
+        font-family: Arial, sans-serif;
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 10px;
+
+        a {
+            color: @lightColor;
+
+            &:link {}
+
+            &:visited {}
+
+            &:hover {
+                color: @darkColor3;
+            }
+        }
+    }
+}
+
+main {
+
+    .primary {
+        background: @color2;
+        padding: 10px 100px;
+
+        h2 {
+            color: @color1;
+
+        }
+    }
+
+    .secondary {
+        background: @lightColor1;
+        color: @lightColor;
+        padding: 10px 100px;
+
+        h2 {
+            color: @lightColor;
+        }
+    }
+
+    .triad {
+        background: @color1;
+        color: @lightColor;
+        padding: 10px 100px;
+
+
+        h2 {
+            color: @lightColor;
+        }
+    }
+
+    .tetrad {
+        color: @lightColor;
+        padding: 10px 100px;
+
+        h2 {
+            color: @lightColor;
+        }
+
+    }
+
+}
+
+footer {
+    background-color: @darkColor;
+    color: @lightColor;
+    overflow: hidden;
+
+    a {
+        color: @lightColor;
+        font-weight: 600;
+
+        &:hover {
+            color: @color2;
+            text-decoration: none;
+        }
+    }
+
+    p {
+        font-family: Arial, sans-serif;
+    }
+
+    .footerBox {
+        font-family: Arial, sans-serif;
+        margin: 10px 0;
+        padding-top: 20px;
+
+        ul {
+            padding: 5px;
+
+            li {
+                padding: 5px;
+            }
+        }
+    }
+}
+
+.footerMenu {
+    background-color: @darkColor;
+
+    ul {
+        margin-bottom: 0;
+        padding: 10px;
+
+        a {
+            color: @lightColor;
+            font-weight: 700;
+
+            &:link {}
+
+            &:visited {}
+
+            &:hover {
+                color: @color2;
+                text-decoration: none;
+            }
+        }
+
+        li {
+            display: inline-block;
+            font-family: Arial, sans-serif;
+            margin-right: 20px;
+        }
+    }
+}
+
+/* Blog Posts */
+.pager li a,
+.pagination a span,
+.pagination li a {
+    .buttonMasher;
+}
+
+.pager a:hover,
+.pager li a:hover,
+.pagination a:hover span,
+.pagination li a:hover,
+.pagination .current {
+    .buttonSlasher;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {}
+
+/* used for xs devices */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .starter-template {
+        min-height: 450px;
+    }
+}
+
+/* used for sm devices, tablets */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .starter-template {
+        min-height: 650px;
+    }
+}
+
+/* used for md devices, smaller desktops */
+
+@media (min-width: 1200px) {
+    .starter-template {
+        min-height: 750px;
+    }
+}
+
+/* used for lg devices, larger desktops */
