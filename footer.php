@@ -1,11 +1,10 @@
 <!-- FOOTER SECTION -->
-
 <footer>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <?php get_sidebar( 'footer' ); ?>
             
-            <div class="col-sm-4 col-sm-offset-1 footerBox">
+            <div class="col-md-3 col-sm-offset-1 footerBox">
                 <h2 class="social">Social</h2>
                 <ul class="list-inline">
                     <?php if ( get_theme_mod( 'facebook_url' ) ) : ?>
@@ -41,7 +40,7 @@
                     );
                 ?>
             </ul>
-            <p>©<?php echo get_bloginfo( 'name' ); ?> <?php echo date('Y'); ?></p>
+            <p>© <?php echo get_bloginfo( 'name' ); ?> <?php echo date('Y'); ?></p>
         </nav><!-- /.footerMenu-->
     </div> <!-- /.container -->
 </footer>

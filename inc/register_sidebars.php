@@ -61,7 +61,7 @@ function illyaking_sidebars() {
     	'class'         => 'footersidebars',
 		'name'          => __( 'Footer Section', 'illyaking' ),
 		'description'   => __( 'for the footer widgets', 'illyaking' ),
-    	'before_widget' => '<div id="%1$s" class="footerBox %2$s">',
+    	'before_widget' => '<div id="%1$s" class="col-md-3 footerBox %2$s">',
     	'after_widget'  => '</div>',
     	'before-title'  => '<h4>',
     	'after-title'   => '</h4>'
