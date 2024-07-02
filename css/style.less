@@ -12,206 +12,215 @@ CHANGES DONE:
 
 /* MOBILE STYLESHEET */
 
-@import 'palette.less';
-@import 'mixins.less';
+@import "palette.less";
+@import "mixins.less";
 
 body {
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
+  font-family: "Montserrat", Arial, sans-serif;
+  overflow-x: hidden;
 
-    a {
-        text-decoration: none;
-        color: @color1;
+  a {
+    text-decoration: none;
+    color: @color1;
 
-        :hover {
-            color: @darkColor2;
-        }
+    :hover {
+      color: @darkColor2;
+    }
+  }
+
+  p {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 300;
+  }
+
+  label {
+    font-family: "Montserrat", Arial, sans-serif;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+h1 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 10px 0;
+
+  a {
+    color: @lightColor;
+
+    &:link {
+      color: @lightColor;
     }
 
-    p {
-        font-family: Arial, sans-serif;
+    &:visited {
+      color: @lightColor;
     }
 
-    label {
-        font-family: Arial, sans-serif;
+    &:hover {
+      color: @darkColor3;
     }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+  }
 }
 
 h2 {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 #s {
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    color: @darkColor;
-    background-color: @lightColor;
-    background-clip: padding-box;
-    border: 1px solid @color1;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: @darkColor;
+  background-color: @lightColor;
+  background-clip: padding-box;
+  border: 1px solid @color1;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-#submit, #searchsubmit {
-    background-color: @color1;
-    color: @lightColor;
-    margin-bottom: 20px;
+#submit,
+#searchsubmit {
+  background-color: @color1;
+  color: @lightColor;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: @color2;
+    color: @color1;
     cursor: pointer;
     border-radius: 5px;
-
-    &:hover {
-        background-color: @color2;
-        color: @color1;
-        cursor: pointer;
-        border-radius: 5px;
-        box-shadow: none;
-    }
-}
-
-header {
-    background: @darkColor;
-
-    h1 {
-        font-family: Arial, sans-serif;
-        font-size: 1.5em;
-        font-weight: 800;
-        padding: 10px;
-
-        a {
-            color: @lightColor;
-
-            &:link {}
-
-            &:visited {}
-
-            &:hover {
-                color: @darkColor3;
-            }
-        }
-    }
+    box-shadow: none;
+  }
 }
 
 main {
+  .primary {
+    background: @lightColor;
+    color: @darkColor;
+    padding: 10px;
 
-    .primary {
-        background: @color2;
-        padding: 10px 100px;
+    h2 {
+      color: @color1;
+    }
+  }
 
-        h2 {
-            color: @color1;
+  .secondary {
+    background: @lightColor;
+    color: @darkColor;
+    padding: 10px;
 
-        }
+    h2 {
+      color: @color1;
+    }
+  }
+
+  .triad {
+    background: @lightColor;
+    color: @darkColor;
+    padding: 10px;
+
+    h2 {
+      color: @color1;
+    }
+  }
+
+  .tetrad {
+    color: @lightColor;
+    padding: 10px;
+
+    h2 {
+      color: @lightColor;
     }
 
-    .secondary {
-        background: @lightColor1;
-        color: @lightColor;
-        padding: 10px 100px;
-
-        h2 {
-            color: @lightColor;
-        }
+    label {
+      color: @lightColor;
     }
+  }
 
-    .triad {
-        background: @color1;
-        color: @lightColor;
-        padding: 10px 100px;
-
-
-        h2 {
-            color: @lightColor;
-        }
-    }
-
-    .tetrad {
-        color: @lightColor;
-        padding: 10px 100px;
-
-        h2 {
-            color: @lightColor;
-        }
-
-    }
-
+  margin-top: 20px;
 }
 
 footer {
-    background-color: @darkColor;
+  background-color: @darkColor;
+  color: @lightColor;
+  overflow: hidden;
+
+  a {
     color: @lightColor;
-    overflow: hidden;
+    font-weight: 300;
 
-    a {
-        color: @lightColor;
-        font-weight: 600;
-
-        &:hover {
-            color: @color2;
-            text-decoration: none;
-        }
+    &:hover {
+      color: @color2;
+      text-decoration: none;
     }
+  }
 
-    p {
-        font-family: Arial, sans-serif;
+  p {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 300;
+  }
+
+  .footerBox {
+    font-family: "Montserrat", Arial, sans-serif;
+    margin: 10px 0;
+    padding-top: 20px;
+
+    ul {
+      padding: 5px;
+
+      li {
+        padding: 5px;
+      }
     }
-
-    .footerBox {
-        font-family: Arial, sans-serif;
-        margin: 10px 0;
-        padding-top: 20px;
-
-        ul {
-            padding: 5px;
-
-            li {
-                padding: 5px;
-            }
-        }
-    }
+  }
 }
 
 .footerMenu {
-    background-color: @darkColor;
+  background-color: @darkColor;
 
-    ul {
-        margin-bottom: 0;
-        padding: 10px;
+  ul {
+    margin-bottom: 0;
+    padding: 10px;
 
-        a {
-            color: @lightColor;
-            font-weight: 700;
+    a {
+      color: @lightColor;
+      font-weight: 300;
 
-            &:link {}
+      &:link {
+        color: @lightColor;
+      }
 
-            &:visited {}
+      &:visited {
+        color: @lightColor;
+      }
 
-            &:hover {
-                color: @color2;
-                text-decoration: none;
-            }
-        }
-
-        li {
-            display: inline-block;
-            font-family: Arial, sans-serif;
-            margin-right: 20px;
-        }
+      &:hover {
+        color: @color2;
+        text-decoration: none;
+      }
     }
+
+    li {
+      display: inline-block;
+      font-family: "Montserrat", Arial, sans-serif;
+      margin-right: 20px;
+    }
+  }
 }
 
 /* Blog Posts */
 .pager li a,
 .pagination a span,
 .pagination li a {
-    .buttonMasher;
+  .buttonMasher;
 }
 
 .pager a:hover,
@@ -219,35 +228,36 @@ footer {
 .pagination a:hover span,
 .pagination li a:hover,
 .pagination .current {
-    .buttonSlasher;
+  .buttonSlasher;
 }
 
 /* Media Queries */
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+}
 
 /* used for xs devices */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .starter-template {
-        min-height: 450px;
-    }
+  .starter-template {
+    min-height: 450px;
+  }
 }
 
 /* used for sm devices, tablets */
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .starter-template {
-        min-height: 650px;
-    }
+  .starter-template {
+    min-height: 650px;
+  }
 }
 
 /* used for md devices, smaller desktops */
 
 @media (min-width: 1200px) {
-    .starter-template {
-        min-height: 750px;
-    }
+  .starter-template {
+    min-height: 750px;
+  }
 }
 
 /* used for lg devices, larger desktops */
