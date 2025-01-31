@@ -90,18 +90,18 @@
         <section id="contact">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 tetrad">
+                    <div class="col-md-7 tetrad">
                         <?php echo do_shortcode(
                             get_theme_mod('contact_form_area', 'Insert Shortcode here')
                         ); ?>
-                    </div> <!-- /.col-md-6 -->
-                    <div class="col-md-6 tetrad" style="
-                            background-image:url(https://illyaking.com/wp-content/themes/illyaking/img/SouthPark.jpg); 
-                            background-size:cover;
+                    </div> <!-- /.col-md-7 -->
+                    <div class="col-md-5 tetrad" style="
+                            background-image:url(https://illyaking.com/wp-content/uploads/2023/04/arleneSchnitzerConcertHall.jpg); 
+                            background-size:contain;
                             background-attachment: fixed;
                             ">
 
-                    </div> <!-- /.col-md-6 -->
+                    </div> <!-- /.col-md-5 -->
                 </div> <!-- /.row -->
             </div> <!-- /.div -->
         </section> <!-- /#section.contactForm -->

@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-
 <!-- CONTENT BELOW -->
 <div class="container-fluid">
 

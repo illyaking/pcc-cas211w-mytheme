@@ -29,7 +29,7 @@
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
                 <?php else : ?>
-                <div class="col-xs-12">
+                <div class="col-xs-8">
                     <p><?php _e( 'No products have been created yet.<br>Add that category and create post.<br>Be sure to give each product a featured image.', 'illyaking' ); ?></p>
                 </div>
                 <!--/col-->

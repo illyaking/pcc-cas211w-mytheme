@@ -101,15 +101,15 @@ add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
 // Register Custom Post Type - Products
 add_action('init', 'create_post_type');
-add_post_type_support('illya_product', 'thumbnail');
+add_post_type_support('illya_comics', 'thumbnail');
 function create_post_type()
 {
     register_post_type(
-        'illya_product',
+        'illya_comics',
         array(
             'labels' => array(
-                'name' => __('Products'),
-                'singular_name' => __('Product')
+                'name' => __('Comics'),
+                'singular_name' => __('Comic')
             ),
             'public' => true,
             'has_archive' => true,
